@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  size: 50vmax;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.SP {
+  position: absolute;
+  top: 90vh;
+  left: 5vw;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: grey;
+  text-decoration-line: none;
+}
+
+.home {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+}
+.home a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+main {
+  background-image: url(about_BG.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  color: white;
+  position: relative;
+  top: 10vw;
+  left: 20vw;
+}
+
+.firCol {
+  max-width: 39vw;
+  height: 4.5em;
+  vertical-align: middle;
+}
+
+.lasCol {
+  max-width: 139vw;
+  height: 4.5em;
+  vertical-align: bottom;
+}
+
+.contBut {
+  position: relative;
+  left: 0.5vw;
+  width: 19vw;
+  height: 2.5em;
+  vertical-align: bottom;
+  text-align: center;
+  align-content: center;
+  color: white;
+  background-color: orange;
+  border-radius: 6px;
+  border-color: black;
+  transition: background-color 1s;
+}
+/* .contBut > input:checked ~ .contBut {
+  background-color: red;
+} */
+/* doesn't work, why??? */
+
+.contBut:hover {
+  background-color: rgba(255, 166, 0, 0.719);
+}
+
+.contBut:focus,
+.contBut:active {
+  background-color: coral;
+  color: rgb(214, 243, 250);
+  transition: none;
+}
+
+/* input[type="submit"] {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+} */
+
+#contName,
+#contEmail {
+  width: 20vw;
+  height: 2.5em;
+  border-radius: 6px;
+  border-color: black;
+}
+
+#mesToMe {
+  width: 20vw;
+  height: 10vw;
+  border-radius: 6px;
+  border-color: black;
+}
+
+/* #contName,
+#contEmail {
+  position: relative;
+  top: 5vw;
+  left: 10vw;
+  width: 20em;
+  height: 2.5em;
+  border-radius: 6px;
+  border-color: black;
+} */
+
+/* rotating cube style (copied https://www.prowaretech.com/Computer/Html/Css/CubeMenu#downloadcode_sample_1) */
+
+.cube-container {
+  perspective: 10000px;
+}
+.cube {
+  transform-style: preserve-3d;
+  width: 20vmax;
+  height: 20vmax;
+  position: relative;
+  margin: auto;
+  animation: rotate 15s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate {
+  from {
+    transform: rotateX(40deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(40deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+.cube a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3vmax;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  background-color: black;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+.cube a:nth-child(1) {
+  transform: rotateY(0deg) rotateZ(0deg) translateZ(10vmax);
+  background-image: url("Inspiration.jpeg");
+}
+.cube a:nth-child(2) {
+  transform: rotateY(90deg) rotateZ(180deg) translateZ(10vmax);
+  background-image: url("5c633eaa35825.png");
+}
+.cube a:nth-child(3) {
+  transform: rotateY(180deg) rotateZ(180deg) translateZ(10vmax);
+  background-image: url("ed-fox.gif");
+}
+.cube a:nth-child(4) {
+  transform: rotateY(-90deg) rotateZ(180deg) translateZ(10vmax);
+  background-image: url(consistency.jpeg);
+}
+.cube a:nth-child(5) {
+  transform: rotateX(90deg) rotateZ(0deg) translateZ(10vmax);
+  background-image: url(BC_logo.png);
+}
+.cube a:nth-child(6) {
+  transform: rotateX(-90deg) rotateZ(0deg) translateZ(10vmax);
+  background-image: url(vectorstock_21382311.webp);
+}
+.cube a:hover {
+  background-image: none;
+}
+
+/* end of copied code */
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.page h1 {
+  /* text-transform: uppercase; */
+  letter-spacing: 1vmin;
+  font-size: 10vmin;
+  position: relative;
+  left: 2rem;
+}
+.page:target {
+  background-color: chocolate;
+  color: white;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact {
+  color: white;
+  position: relative;
+  top: 9vw;
+  left: 42vw;
+}
+
+/* #about {
+  background-image: url("about_BG.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/* .triangle {
+  border-left: 220px solid cyan;
+  border-right: 220px dotted red;
+  border-bottom: 220px double blue;
+  border-top: 220px groove yellow;
+  display: inline-block;
+} */
+
+/* div {
+  position: absolute;
+}
+
+.div1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("mPageBGtop.jpg");
+  clip-path: polygon(100vw 0, 50% 50vh, 0 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div2 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("mPageBGright.jpg");
+  clip-path: polygon(100vw 0, 50vw 50vh, 100vw 100vh);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("mPageBGbot.jpg");
+  clip-path: polygon(50vw 50vh, 100vw 100vh, 0 100vh);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div4 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("mPageBGleft.jpg");
+  clip-path: polygon(0 0, 50vw 50vh, 0 100vh);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */

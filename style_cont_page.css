@@ -1,0 +1,161 @@
+/* * {
+  font-family: Roboto, Rubic, sans-serif;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Rubic, sans-serif;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+/* body {
+  background-color: black;
+  color: white;
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  size: 98vmax;
+} */
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contact {
+  margin: 1rem auto;
+  font-size: 2.2rem;
+}
+
+h1,
+.home,
+a {
+  /* color: white; */
+  color: #f4c873;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1rem;
+}
+form {
+  max-width: 420px;
+  margin: 1.5rem auto;
+  /* color: white; */
+}
+
+.feedback-input {
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  /* line-height: 22px; */
+  background-color: transparent;
+  /* border: 2px solid #cc6666; */
+  border: 2px solid #f4c873;
+  transition: all 0.3s;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+::placeholder {
+  color: #f4c873;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.feedback-input:focus {
+  /* border: 2px solid #cc4949; */
+  /* border: 2px solid#f4c873; */
+  border: 2px solid orange;
+}
+
+textarea {
+  height: 14rem;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  /* background: #cc6666; */
+  background: #f4c873;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  /* background: #cc4949; */
+  background: orange;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+  position: absolute;
+}
+
+.div1 {
+  width: 100vw;
+  height: 100vmax;
+  background-image: url("mPageBGtop.webp");
+  clip-path: polygon(100vw 0, 50% 50%, 0 0);
+  /* clip-path: polygon(100vw 0, 50% 50vh, 0 0); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.div2 {
+  width: 100vw;
+  height: 100vmax;
+  background-image: url("mPageBGright.webp");
+  clip-path: polygon(100vw 0, 50% 50%, 100% 100%);
+  /* clip-path: polygon(100vw 0, 50vw 50vh, 100vw 100vh); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.div3 {
+  width: 100vw;
+  height: 100vmax;
+  background-image: url("mPageBGbot.webp");
+  /* clip-path: polygon(50vw 50vh, 100vw 100vh, 0 100vh); */
+  clip-path: polygon(50% 50%, 100% 100%, 0 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.div4 {
+  width: 100vw;
+  height: 100vmax;
+  background-image: url("mPageBGleft.webp");
+  /* clip-path: polygon(0 0, 50vw 50vh, 0 100vh); */
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
