@@ -4,7 +4,7 @@ my portfolio page
 
 ##
 
-https://github.com/VitaliiDubinin/VitaliiDubinin.github.io.git
+https://vitaliidubinin.github.io/
 
 ###
 
