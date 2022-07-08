@@ -12,4 +12,5 @@ That code was creaed as a part of practical tasks due studying on FullStackDevel
 
 Greate Thanks for our teachers Margit and Santosh!!!
 
-20220708
+20220708:
+npm install bootstrap
