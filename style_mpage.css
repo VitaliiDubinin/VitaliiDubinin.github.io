@@ -60,6 +60,15 @@ a {
   text-decoration: none;
 }
 
+/* .icon-bar {
+  color: red;
+} */
+
+/* .navbar-toggle, */
+.icon-bar {
+  border: 1px solid #f4c873;
+}
+
 .nav,
 .navbar-brand {
   font-size: 2.5rem;

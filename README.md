@@ -14,3 +14,4 @@ Greate Thanks for our teachers Margit and Santosh!!!
 
 20220708:
 npm install bootstrap
+npm install jquery
