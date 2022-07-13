@@ -20,6 +20,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -100;
 }
 
 .div2 {
@@ -31,6 +32,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -100;
 }
 
 .div3 {
@@ -42,6 +44,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -100;
 }
 
 .div4 {
@@ -53,6 +56,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -100;
 }
 
 .navbar-brand {
@@ -99,4 +103,14 @@
   margin-left: 5px;
   margin-right: 5px;
   width: auto;
+}
+
+.welText {
+  color: red;
+  font-size: 5rem;
+}
+
+.slider .ttext {
+  display: inline-block;
+  font-size: 4rem;
 }
