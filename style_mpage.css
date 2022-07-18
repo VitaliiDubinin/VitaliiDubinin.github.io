@@ -105,12 +105,26 @@
   width: auto;
 }
 
-.welText {
-  color: red;
+.slider {
+  color: #f4c873;
   font-size: 5rem;
+  position: absolute;
+  top: 45vh;
+  left: 30vw;
 }
 
-.slider .ttext {
-  display: inline-block;
+.slider .welText,
+.slider .typed-cursor {
+  display: inline;
   font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.primary {
+  color: orange;
+}
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+  color: white;
 }
