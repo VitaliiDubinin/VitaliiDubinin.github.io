@@ -46,6 +46,7 @@ header {
 
 .headSkills {
   padding: 0;
+  z-index: 100;
 }
 .navbar-brand {
   color: #f4c873;
@@ -124,6 +125,13 @@ header {
 
 /* Skills section & blocks */
 /*-----------skills part---------*/
+.skills-area {
+  margin-top: 30px;
+}
+.skills-area p {
+  margin-bottom: -5px;
+}
+
 .devicons {
   font-size: 3rem;
 }
@@ -141,7 +149,7 @@ header {
   padding: 25px 35px;
   position: relative;
   transition: all 0.5s ease 0s;
-  margin-top: 28px;
+  margin-top: 20px;
   z-index: 9;
 }
 
@@ -168,7 +176,7 @@ header {
   opacity: 1;
 }
 .skills-wrap::after {
-  right: -100%;
+  right: 100%;
   bottom: -37px;
 }
 .skills-wrap:hover:after {
@@ -197,7 +205,10 @@ header {
 }
 
 .skills-wrap:hover .skills-icon i {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
+}
+.rotate:hover {
+  transform: rotate(45deg);
 }
 
 .skills-wrap h3 {
@@ -205,4 +216,8 @@ header {
   font-weight: 700;
   padding-bottom: 15px;
   position: relative;
+}
+.skills-wrap p {
+  font-size: 2rem;
+  margin-bottom: 0;
 }
