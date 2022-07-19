@@ -1,16 +1,16 @@
 jQuery(document).ready(function () {
   "use strict";
-  $(".div1,.div2,.div3,.div4").ripples({
-    dropRadius: 15,
-    perturbance: 0.01,
-  });
-  $(".text").typed({
-    strings: ["Fist sentence.", "Second sentence."],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
-    showCursor: false,
-  });
+  // $(".div1,.div2,.div3,.div4").ripples({
+  //   dropRadius: 15,
+  //   perturbance: 0.01,
+  // });
+  // $(".text").typed({
+  //   strings: ["Fist sentence.", "Second sentence."],
+  //   typeSpeed: 50,
+  //   backSpeed: 50,
+  //   loop: true,
+  //   showCursor: false,
+  // });
 });
 
 // $(function () {
