@@ -169,6 +169,7 @@ header {
 .skills-wrap::before {
   top: -37px;
   left: 100%;
+  color: orange;
 }
 
 .skills-wrap:hover:before {
@@ -185,14 +186,15 @@ header {
 }
 
 .skills-wrap:hover {
-  color: red;
+  color: #f4c873;
 }
-.skills-wrap h3 {
-  color: white;
+.skills-wrap h3,
+.skills-wrap i {
+  color: orange;
 }
 
 .skills-wrap:hover h3 {
-  color: red;
+  color: #f4c873;
 }
 .skills-wrap:hover h3:after {
   background-color: white;
