@@ -17,21 +17,10 @@ body {
   /* width: 99vw; */
 }
 
-/* .logo {
-  color: #f4c873;
-  display: flex;
-  font-size: 1.25rem;
-  font-weight: bolder;
-} */
-
 header,
 section,
 footer {
   padding: 2rem;
-}
-
-.headSkills {
-  padding: 0;
 }
 
 footer {
@@ -53,6 +42,10 @@ header {
   height: min-content;
   background-image: url("mPageBGbot.webp");
   background-position: bottom;
+}
+
+.headSkills {
+  padding: 0;
 }
 .navbar-brand {
   color: #f4c873;
@@ -94,6 +87,10 @@ header {
   background-size: 280%;
 }
 
+/* HEADER ENDS*/
+
+/* Buttons Top & HOME */
+
 #backToTop,
 #home {
   background-color: #f4c873;
@@ -121,4 +118,91 @@ header {
 #home .material-icons {
   vertical-align: text-bottom;
   font-size: 2.8rem;
+}
+
+/* Buttons Top & HOME ENDS*/
+
+/* Skills section & blocks */
+/*-----------skills part---------*/
+.devicons {
+  font-size: 3rem;
+}
+/* .fa {
+  border-color: red;
+  border-style: solid;
+  height: 30px;
+  width: 30px;
+  font-size: 2.5rem;
+} */
+
+.skills-wrap {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 25px 35px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  margin-top: 28px;
+  z-index: 9;
+}
+
+.skills-wrap::before,
+.skills-wrap::after {
+  content: "";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #34495e;
+}
+
+.skills-wrap::before {
+  top: -37px;
+  left: 100%;
+}
+
+.skills-wrap:hover:before {
+  left: -27px;
+  opacity: 1;
+}
+.skills-wrap::after {
+  right: -100%;
+  bottom: -37px;
+}
+.skills-wrap:hover:after {
+  right: -27px;
+  opacity: 1;
+}
+
+.skills-wrap:hover {
+  color: red;
+}
+.skills-wrap h3 {
+  color: white;
+}
+
+.skills-wrap:hover h3 {
+  color: red;
+}
+.skills-wrap:hover h3:after {
+  background-color: white;
+}
+
+.skills-icon i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+.skills-wrap:hover .skills-icon i {
+  transform: rotate(180deg);
+}
+
+.skills-wrap h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 15px;
+  position: relative;
 }
