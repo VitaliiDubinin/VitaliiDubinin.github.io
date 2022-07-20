@@ -24,7 +24,7 @@ footer {
 }
 
 footer {
-  background-image: url("mPageBGleft.webp");
+  background-image: url("../mPageBGleft.webp");
   background-size: 100%;
 }
 
@@ -40,7 +40,7 @@ header {
   position: sticky;
   top: 0;
   height: min-content;
-  background-image: url("mPageBGbot.webp");
+  background-image: url("../mPageBGbot.webp");
   background-position: bottom;
 }
 
@@ -84,7 +84,7 @@ header {
 }
 
 .bg {
-  background-image: url("mPageBGleft.webp");
+  background-image: url("../mPageBGleft.webp");
   background-size: 280%;
 }
 
@@ -209,8 +209,9 @@ header {
 .skills-wrap:hover .skills-icon i {
   transform: rotate(360deg);
 }
-.rotate:hover {
-  transform: rotate(45deg);
+
+.skills-wrap:hover a {
+  color: white;
 }
 
 .skills-wrap h3 {
@@ -222,4 +223,43 @@ header {
 .skills-wrap p {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+.work {
+  margin-top: 25px;
+}
+.row.no-gutters [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+.img-wrapper img {
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+/* .work img {
+  width: 20vw;
+  height: 20vh;
+} */
+.open-popup {
+  padding: 20px;
+  color: black;
+}
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  color: red;
 }

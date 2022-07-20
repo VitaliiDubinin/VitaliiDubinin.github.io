@@ -1,34 +1,67 @@
 jQuery(document).ready(function () {
+  // $(document).ready(function () {
   "use strict";
+
+  // ---Ripple part----
   // $(".div1,.div2,.div3,.div4").ripples({
   //   dropRadius: 15,
   //   perturbance: 0.01,
   // });
-  // $(".text").typed({
-  //   strings: ["Fist sentence.", "Second sentence."],
-  //   typeSpeed: 50,
-  //   backSpeed: 50,
-  //   loop: true,
-  //   showCursor: false,
+  // ---Ripple part END----
+
+  $(".welText").typed({
+    strings: [
+      "<strong> welcome to my </strong> <strong class=primary> portfolio!!!</strong>",
+      "<strong>Nice to </strong><strong class=primary> meet YOU!!!</strong>",
+    ],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+    showCursor: true,
+  });
+
+  // $(".work").magnificPopup({
+  //   delegate: "a", // child items selector, by clicking on it popup will open
+  //   type: "image",
+  //   gallery: {
+  //     enabled: true,
+  //   },
+  // });
+
+  // $("p").click(function () {
+  //   $(this).hide();
+  // });
+  // $(".welText").click(function () {
+  //   $(this).hide();
   // });
 });
 
-// $(function () {
-//   $(".text").Typed({
-//     strings: ["First sentence.", "Second sentence."],
-//     typeSpeed: 10,
-//   });
+// ---Magnific POPUP----
+// $(".work").magnificPopup({
+//   delegate: "a", // child items selector, by clicking on it popup will open
+//   type: "image",
+//   gallery: {
+//     enabled: true,
+//   },
 // });
 
-let typed = new Typed(".welText", {
-  strings: [
-    "<strong> welcome to my </strong> <strong class=primary> portfolio!!!</strong>",
-    "<strong>Nice to </strong><strong class=primary> meet YOU!!!</strong>",
-  ],
-  typeSpeed: 50,
-  backSpeed: 10,
-  loop: true,
-  // showCursor: false,
+$(".work").magnificPopup({
+  delegate: "a", // child items selector, by clicking on it popup will open
+  type: "image",
+  gallery: {
+    enabled: true,
+  },
 });
-// Typed.new(".welText", { strings: ["test string1", "test string2"], contentType: "html" });
-// let typed = new Typed(".text", { strings: ["test string1", "test string2"], typeSpeed: 50, backSpeed: 50, loop: true });
+
+// ---Typed working with last version of typed----
+// let typed = new Typed(".text", {
+//   strings: [
+//     "<strong> welcome to my </strong> <strong class=primary> portfolio!!!</strong>",
+//     "<strong>Nice to </strong><strong class=primary> meet YOU!!!</strong>",
+//   ],
+//   typeSpeed: 50,
+//   backSpeed: 10,
+//   loop: true,
+//   showCursor: false,
+// });
+// ---Typed working END----

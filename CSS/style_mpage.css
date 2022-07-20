@@ -14,7 +14,7 @@
 .div1 {
   width: 100vw;
   height: 100vh;
-  background-image: url("mPageBGtop.webp");
+  background-image: url("../mPageBGtop.webp");
   clip-path: polygon(100vw 0, 50% 50%, 0 0);
   /* clip-path: polygon(100vw 0, 50% 50vh, 0 0); */
   background-size: cover;
@@ -26,7 +26,7 @@
 .div2 {
   width: 100vw;
   height: 100vh;
-  background-image: url("mPageBGright.webp");
+  background-image: url("../mPageBGright.webp");
   clip-path: polygon(100vw 0, 50% 50%, 100% 100%);
   /* clip-path: polygon(100vw 0, 50vw 50vh, 100vw 100vh); */
   background-size: cover;
@@ -38,7 +38,7 @@
 .div3 {
   width: 100vw;
   height: 100vh;
-  background-image: url("mPageBGbot.webp");
+  background-image: url("../mPageBGbot.webp");
   /* clip-path: polygon(50vw 50vh, 100vw 100vh, 0 100vh); */
   clip-path: polygon(50% 50%, 100% 100%, 0 100%);
   background-size: cover;
@@ -50,7 +50,7 @@
 .div4 {
   width: 100vw;
   height: 100vh;
-  background-image: url("mPageBGleft.webp");
+  background-image: url("../mPageBGleft.webp");
   /* clip-path: polygon(0 0, 50vw 50vh, 0 100vh); */
   clip-path: polygon(0 0, 50% 50%, 0 100%);
   background-size: cover;
