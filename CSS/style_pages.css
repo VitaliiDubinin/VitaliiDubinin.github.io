@@ -24,8 +24,10 @@ footer {
 }
 
 footer {
-  background-image: url("../mPageBGleft.webp");
+  background-image: url("../mPageBGbot.webp");
   background-size: 100%;
+  background-position: bottom;
+  text-align: center;
 }
 
 section {
@@ -258,8 +260,28 @@ header {
   background: #fff;
   padding: 40px;
   width: auto;
-  max-width: 200px;
+  max-width: max-content;
   margin: 20px auto;
   text-align: center;
   color: red;
+  font-size: 2rem;
+}
+
+.skills-tm {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+
+  background-color: yellow;
+  position: relative;
+  left: 3px;
+  border-radius: 5px;
+}
+.skills-ft {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+.skills-ft:hover {
+  text-decoration: underline;
+  color: white;
 }
