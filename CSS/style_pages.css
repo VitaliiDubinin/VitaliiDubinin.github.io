@@ -281,6 +281,10 @@ header {
   text-decoration: underline;
   color: cornflowerblue;
 }
+.skills-symfcert {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
 .skills-ft:hover {
   text-decoration: underline;
   color: white;

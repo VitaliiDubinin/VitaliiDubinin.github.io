@@ -11,4 +11,25 @@ jQuery(document).ready(function () {
     },
     type: "image", // this is a default type
   });
+
+  $(".skills-symfcert").magnificPopup({
+    items: [
+      {
+        src: "/pictures/skills/sfcasts-certificate-composer.png",
+        title: "composer certificate",
+      },
+      {
+        src: "/pictures/skills/sfcasts-certificate-harmonious-development-with-symfony-6.png",
+        title: "Harm dev with Symf Certificate",
+      },
+      {
+        src: "/pictures/skills/sfcasts-certificate-php-namespaces.png",
+        title: "PHP namespaces certificate",
+      },
+    ],
+    gallery: {
+      enabled: true,
+    },
+    type: "image", // this is a default type
+  });
 });
