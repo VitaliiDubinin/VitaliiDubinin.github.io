@@ -30,10 +30,10 @@ footer {
   text-align: center;
 }
 
-section {
+/* section {
   min-height: 50vh;
   scroll-margin-top: 5rem;
-}
+} */
 
 /* HEADER */
 
@@ -66,7 +66,7 @@ header {
 }
 
 .navbar {
-  padding: 22px 0px;
+  /* padding: 22px 0px; */
   /* background-color: aqua !important; */
   border-bottom: none !important;
 }
@@ -288,4 +288,41 @@ header {
 .skills-ft:hover {
   text-decoration: underline;
   color: white;
+}
+
+/* gallery part*/
+
+#work-photos,
+#hobby-photos {
+  width: 83vw;
+  /* height: 88vh; */
+  /* background-color: transparent; */
+
+  /* border-color: red;
+  border-style: solid;
+  border-width: 1px; */
+}
+
+#work-photos img,
+#hobby-photos img {
+  width: 33rem;
+  height: 28rem;
+}
+
+h4.photo_name {
+  color: blue;
+  font-size: medium;
+  font-weight: bold;
+}
+h4.photo_place {
+  color: blueviolet;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.work_photo {
+  margin-top: 50px;
+}
+.work_photo {
+  margin-right: 125px;
 }

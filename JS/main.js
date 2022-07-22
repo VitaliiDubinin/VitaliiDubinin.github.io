@@ -53,12 +53,11 @@ $(".work").magnificPopup({
   },
 });
 
+$("#work-photos").owlCarousel();
+$("#hobby-photos").owlCarousel();
+
 $(".skills-ft").magnificPopup({
   items: [
-    // {
-    //   src: '<div class="white-popup">14 month,<br />185 business-trip days,<br />55 flights,<br />15 train-trips,<br />negotiation in 65 cities. <br />Result - new mobile operator started in time.</div>', // HTML string
-    //   type: "inline",
-    // },
     {
       src: "/pictures/skills/S1.png",
       title: "Project Description & Goals",
