@@ -326,3 +326,91 @@ h4.photo_place {
 .work_photo {
   margin-right: 125px;
 }
+
+.panel-title {
+  color: red;
+}
+.panel-body {
+  color: blue;
+}
+
+.about {
+  height: 85vh;
+}
+
+#accordian .panel {
+  box-shadow: none;
+  /* border: none; */
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(154, 221, 243);
+  border-color: white;
+  border-right: 6px;
+}
+
+#accordian .panel-heading {
+  padding: 1px;
+  border: none;
+  border-radius: 10px;
+}
+
+#accordian .panel-title a {
+  display: block;
+  padding: 25px 35px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background: #34495e;
+  border: none;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a:after,
+#accordian .panel-title a.collapsed:after {
+  content: "\f068";
+  font-family: fontawesome;
+  width: 40px;
+  height: 40px;
+  line-height: 32px;
+  border-radius: 50%;
+  background: #34495e;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(154, 221, 243);
+  border: 5px solid rgb(154, 221, 243);
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a.collapsed:after {
+  content: "\f067";
+}
+
+#accordian .panel-title a:hover:after,
+#accordian .panel-title a.collapsed:hover:after {
+  transform: rotate(360deg);
+}
+
+#accordian .panel-body {
+  padding: 15px 25px;
+  background-color: #ebebeb;
+  font-size: 2rem;
+  color: #8c8c8c;
+  line-height: 25px;
+  border-top: none;
+  position: relative;
+}
+
+.panel-heading a {
+  text-decoration: none !important;
+}
+
+.freeimage img {
+  height: auto;
+  max-width: 18vw;
+  max-height: 61vh;
+}
