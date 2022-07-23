@@ -32,4 +32,24 @@ jQuery(document).ready(function () {
     },
     type: "image", // this is a default type
   });
+  $(".skills-ft").magnificPopup({
+    items: [
+      {
+        src: "/pictures/skills/S1.png",
+        title: "Project Description & Goals",
+      },
+      {
+        src: "/pictures/skills/S2.webp",
+        title: "Time plan & Roles",
+      },
+      {
+        src: "/pictures/skills/S3.webp",
+        title: "Team!",
+      },
+    ],
+    gallery: {
+      enabled: true,
+    },
+    type: "image", // this is a default type
+  });
 });
