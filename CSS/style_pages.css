@@ -414,3 +414,13 @@ h4.photo_place {
   max-width: 18vw;
   max-height: 61vh;
 }
+
+.intro-text {
+  display: block;
+  padding: 25px 35px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  /* background: #34495e; */
+  border: none;
+}
