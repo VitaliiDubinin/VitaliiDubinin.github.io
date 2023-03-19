@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  <audio>
+    <source src="./projects.mp4"></source>
+    {# <source src="audio/audio.ogg"></source> #}
+</audio>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -158,6 +162,10 @@
 <script src="main.js" type="text/javascript"></script>
 <script src="about.js" type="text/javascript"></script>
 <script src="projects.js" type="text/javascript"></script>
+<script>
+  var audio = $("audio")[0];
+  audio.play();
+</script>
 </body>
 </html>
 
